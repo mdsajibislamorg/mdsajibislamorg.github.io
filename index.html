@@ -1,0 +1,1822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Md Sajib Islam | Affiliate Marketer & SEO Specialist</title>
+
+    <meta name="description" content="Md Sajib Islam is an Affiliate Marketer & SEO Specialist with 5+ years of practical experience in SEO, affiliate marketing, digital promotion and online research.">
+    <meta name="keywords" content="Md Sajib Islam, Affiliate Marketer, SEO Specialist, Affiliate Marketing, SEO, Digital Marketing, Freelancer">
+    <meta name="author" content="Md Sajib Islam">
+
+    <meta property="og:title" content="Md Sajib Islam | Affiliate Marketer & SEO Specialist">
+    <meta property="og:description" content="Affiliate Marketer & SEO Specialist with 5+ years of practical experience.">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #070b14;
+            --bg-soft: #0d1320;
+            --card: rgba(17, 25, 40, 0.72);
+            --card-solid: #111927;
+            --border: rgba(255,255,255,0.09);
+            --text: #f4f7fb;
+            --muted: #9ba8ba;
+            --accent: #4da3ff;
+            --accent-2: #7c5cff;
+            --success: #45d483;
+            --max: 1180px;
+            --radius: 22px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            background:
+                radial-gradient(circle at 10% 10%, rgba(77,163,255,.12), transparent 28%),
+                radial-gradient(circle at 90% 20%, rgba(124,92,255,.10), transparent 25%),
+                var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: min(92%, var(--max));
+            margin: auto;
+        }
+
+        /* ================= NAVBAR ================= */
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+            backdrop-filter: blur(18px);
+            background: rgba(7,11,20,.72);
+            border-bottom: 1px solid var(--border);
+        }
+
+        nav {
+            min-height: 74px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 26px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--muted);
+            font-size: 14px;
+            font-weight: 600;
+            transition: .25s;
+        }
+
+        .nav-links a:hover {
+            color: var(--text);
+        }
+
+        .menu-btn {
+            display: none;
+            background: transparent;
+            color: white;
+            border: 0;
+            font-size: 27px;
+            cursor: pointer;
+        }
+
+        /* ================= HERO ================= */
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 120px 0 70px;
+            position: relative;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.25fr .75fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 14px;
+            border: 1px solid var(--border);
+            background: rgba(255,255,255,.035);
+            border-radius: 50px;
+            color: #b9c7da;
+            font-size: 13px;
+            margin-bottom: 22px;
+        }
+
+        .eyebrow::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--success);
+            box-shadow: 0 0 12px rgba(69,212,131,.8);
+        }
+
+        .hero h1 {
+            font-size: clamp(43px, 6vw, 76px);
+            line-height: 1.03;
+            letter-spacing: -3px;
+            margin-bottom: 20px;
+        }
+
+        .gradient-text {
+            background: linear-gradient(100deg, var(--accent), #9b7cff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .hero h2 {
+            font-size: clamp(20px, 3vw, 30px);
+            color: #d7dfeb;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            max-width: 680px;
+            color: var(--muted);
+            font-size: 17px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            padding: 13px 20px;
+            border-radius: 12px;
+            font-size: 14px;
+            font-weight: 700;
+            transition: .25s;
+            border: 1px solid var(--border);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent), var(--accent-2));
+            border: none;
+        }
+
+        .btn-secondary {
+            background: rgba(255,255,255,.04);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+
+        .hero-photo {
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+        .photo-wrapper {
+            width: min(390px, 80vw);
+            aspect-ratio: 1;
+            border-radius: 50%;
+            padding: 8px;
+            background: linear-gradient(135deg, var(--accent), var(--accent-2));
+            box-shadow: 0 0 80px rgba(77,163,255,.18);
+        }
+
+        .photo-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            background: #111827;
+            border: 7px solid var(--bg);
+        }
+
+        /* ================= QUICK FACTS ================= */
+
+        .facts {
+            padding: 20px 0 90px;
+        }
+
+        .facts-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 14px;
+        }
+
+        .fact {
+            padding: 24px 16px;
+            text-align: center;
+            border: 1px solid var(--border);
+            background: var(--card);
+            backdrop-filter: blur(15px);
+            border-radius: 17px;
+        }
+
+        .fact strong {
+            display: block;
+            font-size: 22px;
+            color: var(--text);
+            margin-bottom: 5px;
+        }
+
+        .fact span {
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+        /* ================= SECTIONS ================= */
+
+        section {
+            padding: 105px 0;
+        }
+
+        .section-heading {
+            max-width: 720px;
+            margin-bottom: 45px;
+        }
+
+        .section-heading .label {
+            color: var(--accent);
+            font-size: 13px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .section-heading h2 {
+            font-size: clamp(30px, 5vw, 46px);
+            line-height: 1.15;
+            letter-spacing: -1.5px;
+            margin: 9px 0 15px;
+        }
+
+        .section-heading p {
+            color: var(--muted);
+        }
+
+        /* ================= ABOUT ================= */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 30px;
+            backdrop-filter: blur(15px);
+        }
+
+        .card h3 {
+            margin-bottom: 14px;
+            font-size: 21px;
+        }
+
+        .card p {
+            color: var(--muted);
+        }
+
+        /* ================= JOURNEY ================= */
+
+        .timeline {
+            position: relative;
+            max-width: 900px;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 10px;
+            top: 8px;
+            bottom: 8px;
+            width: 2px;
+            background: linear-gradient(var(--accent), transparent);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 45px;
+            margin-bottom: 35px;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: 4px;
+            top: 8px;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: var(--accent);
+            box-shadow: 0 0 0 5px rgba(77,163,255,.13);
+        }
+
+        .timeline-item span {
+            color: var(--accent);
+            font-size: 13px;
+            font-weight: 800;
+        }
+
+        .timeline-item h3 {
+            margin: 5px 0 7px;
+        }
+
+        .timeline-item p {
+            color: var(--muted);
+        }
+
+        /* ================= SKILLS ================= */
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+
+        .skill {
+            padding: 22px;
+            border: 1px solid var(--border);
+            background: var(--card);
+            border-radius: 17px;
+        }
+
+        .skill-top {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 11px;
+        }
+
+        .skill-top strong {
+            font-size: 14px;
+        }
+
+        .skill-top span {
+            color: var(--accent);
+            font-size: 12px;
+        }
+
+        .bar {
+            height: 6px;
+            background: rgba(255,255,255,.07);
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .bar div {
+            height: 100%;
+            width: 90%;
+            border-radius: 20px;
+            background: linear-gradient(90deg, var(--accent), var(--accent-2));
+        }
+
+        /* ================= SERVICES ================= */
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .service {
+            transition: .3s;
+        }
+
+        .service:hover {
+            transform: translateY(-7px);
+            border-color: rgba(77,163,255,.35);
+        }
+
+        .service-icon {
+            width: 48px;
+            height: 48px;
+            display: grid;
+            place-items: center;
+            border-radius: 13px;
+            background: rgba(77,163,255,.1);
+            color: var(--accent);
+            font-size: 22px;
+            margin-bottom: 18px;
+        }
+
+        .service p {
+            font-size: 14px;
+            margin-top: 8px;
+        }
+
+        /* ================= WHAT I DO ================= */
+
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+        }
+
+        .feature {
+            display: flex;
+            gap: 13px;
+            align-items: flex-start;
+            padding: 20px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+        }
+
+        .check {
+            color: var(--success);
+            font-size: 19px;
+            flex-shrink: 0;
+        }
+
+        .feature strong {
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .feature p {
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        /* ================= PROJECTS ================= */
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .project {
+            min-height: 210px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project small {
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .project h3 {
+            margin: 12px 0 8px;
+        }
+
+        .project p {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .private-tag {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 6px 10px;
+            border-radius: 8px;
+            background: rgba(255,255,255,.06);
+            color: #bac6d6;
+            font-size: 11px;
+        }
+
+        /* ================= NETWORKS ================= */
+
+        .network-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .network {
+            padding: 14px 19px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 14px;
+            transition: .25s;
+        }
+
+        .network:hover {
+            border-color: rgba(77,163,255,.4);
+            transform: translateY(-3px);
+        }
+
+        /* ================= WHY ME ================= */
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .why-number {
+            font-size: 14px;
+            color: var(--accent);
+            font-weight: 800;
+            margin-bottom: 18px;
+        }
+
+        /* ================= PHILOSOPHY ================= */
+
+        .philosophy {
+            padding: 55px;
+            text-align: center;
+            background:
+                linear-gradient(135deg, rgba(77,163,255,.11), rgba(124,92,255,.08)),
+                var(--card);
+            border: 1px solid var(--border);
+            border-radius: 28px;
+        }
+
+        .philosophy blockquote {
+            font-size: clamp(25px, 4vw, 42px);
+            line-height: 1.25;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .philosophy p {
+            max-width: 750px;
+            margin: 22px auto 0;
+            color: var(--muted);
+        }
+
+        /* ================= BEYOND WORK ================= */
+
+        .interest-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .interest {
+            padding: 12px 17px;
+            border-radius: 50px;
+            background: rgba(255,255,255,.045);
+            border: 1px solid var(--border);
+            color: #c8d2df;
+            font-size: 13px;
+        }
+
+        /* ================= SOCIAL ================= */
+
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 14px;
+        }
+
+        .social {
+            padding: 19px;
+            border: 1px solid var(--border);
+            background: var(--card);
+            border-radius: 15px;
+            transition: .25s;
+        }
+
+        .social:hover {
+            transform: translateY(-4px);
+            border-color: rgba(77,163,255,.35);
+        }
+
+        .social strong {
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .social span {
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+        /* ================= CONTACT ================= */
+
+        .contact-box {
+            text-align: center;
+            padding: 70px 30px;
+            background:
+                radial-gradient(circle at center, rgba(77,163,255,.12), transparent 55%),
+                var(--card);
+            border: 1px solid var(--border);
+            border-radius: 28px;
+        }
+
+        .contact-box h2 {
+            font-size: clamp(32px, 5vw, 53px);
+            margin-bottom: 14px;
+        }
+
+        .contact-box p {
+            max-width: 650px;
+            margin: 0 auto;
+            color: var(--muted);
+        }
+
+        .contact-buttons {
+            margin-top: 28px;
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 35px 0;
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .footer-brand {
+            color: var(--text);
+            font-weight: 700;
+        }
+
+        /* ================= ANIMATION ================= */
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(25px);
+            transition: opacity .7s ease, transform .7s ease;
+        }
+
+        .reveal.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 1000px) {
+            .facts-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .services-grid,
+            .projects-grid,
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .social-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 800px) {
+
+            .menu-btn {
+                display: block;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: 74px;
+                left: 0;
+                width: 100%;
+                padding: 20px;
+                flex-direction: column;
+                align-items: flex-start;
+                background: #090e18;
+                border-bottom: 1px solid var(--border);
+                display: none;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero p {
+                margin: auto;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .hero-photo {
+                order: -1;
+            }
+
+            .photo-wrapper {
+                width: 260px;
+            }
+
+            .about-grid,
+            .skills-grid,
+            .feature-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            section {
+                padding: 75px 0;
+            }
+
+            .facts-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .services-grid,
+            .projects-grid,
+            .why-grid,
+            .social-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .card {
+                padding: 23px;
+            }
+
+            .philosophy {
+                padding: 35px 22px;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero h1 {
+                letter-spacing: -2px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+
+<header>
+    <div class="container">
+        <nav>
+            <a href="#home" class="logo">MD <span>SAJIB</span></a>
+
+            <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#philosophy">Philosophy</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<main>
+
+<section class="hero" id="home">
+    <div class="container hero-grid">
+
+        <div class="hero-content reveal">
+
+            <div class="eyebrow">
+                Available Worldwide
+            </div>
+
+            <h1>
+                Md Sajib<br>
+                <span class="gradient-text">Islam</span>
+            </h1>
+
+            <h2>
+                Affiliate Marketer & SEO Specialist
+            </h2>
+
+            <p>
+                Building practical expertise through SEO, affiliate marketing,
+                digital promotion, research and continuous learning.
+                I focus on working independently, solving problems and
+                exploring new opportunities across the digital world.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">
+                    Let's Connect →
+                </a>
+
+                <a href="#about" class="btn btn-secondary">
+                    Explore My Journey
+                </a>
+            </div>
+
+        </div>
+
+        <div class="hero-photo reveal">
+            <div class="photo-wrapper">
+                <!-- Replace this image later -->
+                <img src="images/profile.jpg"
+                     alt="Md Sajib Islam - Affiliate Marketer & SEO Specialist"
+                     onerror="this.style.opacity='.15';">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= QUICK FACTS ================= -->
+
+<section class="facts">
+    <div class="container">
+        <div class="facts-grid reveal">
+
+            <div class="fact">
+                <strong>5+ Years</strong>
+                <span>Practical Experience</span>
+            </div>
+
+            <div class="fact">
+                <strong>2021</strong>
+                <span>Digital Journey Started</span>
+            </div>
+
+            <div class="fact">
+                <strong>SEO + Affiliate</strong>
+                <span>Core Expertise</span>
+            </div>
+
+            <div class="fact">
+                <strong>Worldwide</strong>
+                <span>Availability</span>
+            </div>
+
+            <div class="fact">
+                <strong>Independent</strong>
+                <span>Work Approach</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="label">About Me</span>
+            <h2>Learning, building and growing through experience.</h2>
+            <p>
+                A practical introduction to who I am and how I approach
+                digital work.
+            </p>
+        </div>
+
+        <div class="about-grid">
+
+            <div class="card reveal">
+                <h3>Who I Am</h3>
+
+                <p>
+                    I am Md Sajib Islam, an independent Affiliate Marketer
+                    and SEO Specialist from Bangladesh with 5+ years of
+                    practical experience in the digital space.
+                </p>
+
+                <br>
+
+                <p>
+                    My work revolves around SEO, affiliate marketing,
+                    online research, digital promotion, content strategy
+                    and exploring new platforms and opportunities.
+                </p>
+
+                <br>
+
+                <p>
+                    I do not work as a traditional client-service freelancer.
+                    Most of my work is built and managed independently as
+                    my own digital projects and business activities.
+                </p>
+            </div>
+
+            <div class="card reveal">
+                <h3>My Approach</h3>
+
+                <p>
+                    I enjoy understanding a problem, researching it deeply,
+                    testing possible solutions and finding a practical way
+                    forward.
+                </p>
+
+                <br>
+
+                <p>
+                    I prefer building my own skills rather than depending
+                    heavily on others. Every new platform, strategy,
+                    technology or challenge is an opportunity to learn.
+                </p>
+
+                <br>
+
+                <p>
+                    My long-term goal is not simply to earn more money.
+                    I want to become a highly experienced and knowledgeable
+                    professional who can understand and solve different
+                    kinds of digital problems.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= JOURNEY ================= -->
+
+<section id="experience">
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="label">My Journey</span>
+            <h2>From curiosity to practical experience.</h2>
+            <p>
+                A continuous journey of learning and building since 2021.
+            </p>
+        </div>
+
+        <div class="timeline">
+
+            <div class="timeline-item reveal">
+                <span>February 2021</span>
+                <h3>The Beginning</h3>
+                <p>
+                    My interest in freelancing and digital work grew through
+                    my own family and local guidance. I began my journey by
+                    learning Google SEO and understanding how search engines
+                    and online platforms work.
+                </p>
+            </div>
+
+            <div class="timeline-item reveal">
+                <span>2021 — 2022</span>
+                <h3>SEO & Affiliate Marketing</h3>
+                <p>
+                    I expanded from SEO into affiliate marketing and began
+                    exploring Google and Reddit as important research and
+                    promotion channels, particularly around entertainment
+                    and sports-related markets.
+                </p>
+            </div>
+
+            <div class="timeline-item reveal">
+                <span>2022 — Present</span>
+                <h3>Expanding Digital Expertise</h3>
+                <p>
+                    Over time, I continued working with affiliate offers,
+                    products, content, landing pages, SEO strategies,
+                    research, different platforms and digital promotion
+                    methods.
+                </p>
+            </div>
+
+            <div class="timeline-item reveal">
+                <span>Present</span>
+                <h3>Continuous Growth</h3>
+                <p>
+                    I continue to operate my own digital activities while
+                    learning new technologies, platforms, marketing methods
+                    and SEO strategies.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills">
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="label">Skills</span>
+            <h2>Practical digital skills.</h2>
+            <p>
+                Areas I have developed through hands-on learning and
+                continuous experimentation.
+            </p>
+        </div>
+
+        <div class="skills-grid">
+
+            <div class="skill reveal">
+                <div class="skill-top">
+                    <strong>Keyword Research</strong>
+                    <span>Core Skill</span>
+                </div>
+                <div class="bar"><div style="width:92%"></div></div>
+            </div>
+
+            <div class="skill reveal">
+                <div class="skill-top">
+                    <strong>On-Page SEO</strong>
+                    <span>Core Skill</span>
+                </div>
+                <div class="bar"><div style="width:90%"></div></div>
+            </div>
+
+            <div class="skill reveal">
+                <div class="skill-top">
+                    <strong>Content SEO</strong>
+                    <span>Core Skill</span>
+                </div>
+                <div class="bar"><div style="width:91%"></div></div>
+            </div>
+
+            <div class="skill reveal">
+                <div class="skill-top">
+                    <strong>Technical SEO</strong>
+                    <span>Practical</span>
+                </div>
+                <div class="bar"><div style="width:85%"></div></div>
+            </div>
+
+            <div class="skill reveal">
+                <div class="skill-top">
+                    <strong>Competitor Research</strong>
+                    <span>Practical</span>
+                </div>
+                <div class="bar"><div style="width:88%"></div></div>
+            </div>
+
+            <div class="skill reveal">
+                <div class="skill-top">
+                    <strong>Affiliate Marketing</strong>
+                    <span>Core Expertise</span>
+                </div>
+                <div class="bar"><div style="width:94%"></div></div>
+            </div>
+
+            <div class="skill reveal">
+                <div class="skill-top">
+                    <strong>Google Search Console</strong>
+                    <span>Practical</span>
+                </div>
+                <div class="bar"><div style="width:86%"></div></div>
+            </div>
+
+            <div class="skill reveal">
+                <div class="skill-top">
+                    <strong>Google Analytics</strong>
+                    <span>Practical</span>
+                </div>
+                <div class="bar"><div style="width:82%"></div></div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section id="services">
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="label">Services & Expertise</span>
+            <h2>Areas I work in.</h2>
+            <p>
+                My experience covers multiple parts of the digital
+                marketing and affiliate ecosystem.
+            </p>
+        </div>
+
+        <div class="services-grid">
+
+            <div class="card service reveal">
+                <div class="service-icon">⌕</div>
+                <h3>SEO</h3>
+                <p>
+                    Keyword research, on-page SEO, content SEO,
+                    technical SEO, competitor research and organic
+                    search strategy.
+                </p>
+            </div>
+
+            <div class="card service reveal">
+                <div class="service-icon">↗</div>
+                <h3>Affiliate Marketing</h3>
+                <p>
+                    Offer research, product promotion, affiliate
+                    strategy, landing pages and conversion-focused
+                    promotion.
+                </p>
+            </div>
+
+            <div class="card service reveal">
+                <div class="service-icon">◎</div>
+                <h3>Digital Promotion</h3>
+                <p>
+                    Search-based promotion, Reddit, social media,
+                    content-driven promotion and other online channels.
+                </p>
+            </div>
+
+            <div class="card service reveal">
+                <div class="service-icon">▣</div>
+                <h3>Content Strategy</h3>
+                <p>
+                    SEO-friendly content planning, research,
+                    topic selection and content-focused traffic growth.
+                </p>
+            </div>
+
+            <div class="card service reveal">
+                <div class="service-icon">◈</div>
+                <h3>Market Research</h3>
+                <p>
+                    Audience research, competitor analysis, platform
+                    research and identifying digital opportunities.
+                </p>
+            </div>
+
+            <div class="card service reveal">
+                <div class="service-icon">⚙</div>
+                <h3>Digital Platforms</h3>
+                <p>
+                    Exploring new platforms, tools and workflows to
+                    discover practical digital growth opportunities.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= WHAT I DO ================= -->
+
+<section>
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="label">What I Do</span>
+            <h2>From research to execution.</h2>
+        </div>
+
+        <div class="feature-list">
+
+            <div class="feature reveal">
+                <span class="check">✓</span>
+                <div>
+                    <strong>Affiliate Offer Research</strong>
+                    <p>Researching products, offers and relevant opportunities.</p>
+                </div>
+            </div>
+
+            <div class="feature reveal">
+                <span class="check">✓</span>
+                <div>
+                    <strong>Keyword Research</strong>
+                    <p>Finding search opportunities and relevant topics.</p>
+                </div>
+            </div>
+
+            <div class="feature reveal">
+                <span class="check">✓</span>
+                <div>
+                    <strong>SEO Content</strong>
+                    <p>Planning and creating search-friendly content.</p>
+                </div>
+            </div>
+
+            <div class="feature reveal">
+                <span class="check">✓</span>
+                <div>
+                    <strong>Landing Pages</strong>
+                    <p>Building focused pages for digital campaigns.</p>
+                </div>
+            </div>
+
+            <div class="feature reveal">
+                <span class="check">✓</span>
+                <div>
+                    <strong>Competitor Research</strong>
+                    <p>Studying competitors, markets and digital strategies.</p>
+                </div>
+            </div>
+
+            <div class="feature reveal">
+                <span class="check">✓</span>
+                <div>
+                    <strong>Traffic Strategy</strong>
+                    <p>Using SEO, search, Reddit, social and online channels.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section>
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="label">Selected Work</span>
+            <h2>Digital projects & experience.</h2>
+            <p>
+                Project details are intentionally kept private. The
+                categories below represent areas of practical experience.
+            </p>
+        </div>
+
+        <div class="projects-grid">
+
+            <div class="card project reveal">
+                <small>01 / Affiliate</small>
+                <h3>Affiliate Marketing Projects</h3>
+                <p>
+                    Independent affiliate projects involving offer research,
+                    promotion, SEO and digital traffic strategies.
+                </p>
+                <span class="private-tag">Private Project</span>
+            </div>
+
+            <div class="card project reveal">
+                <small>02 / SEO</small>
+                <h3>SEO & Content Websites</h3>
+                <p>
+                    SEO-focused websites and content projects built around
+                    search research, optimization and organic growth.
+                </p>
+                <span class="private-tag">Private Project</span>
+            </div>
+
+            <div class="card project reveal">
+                <small>03 / Digital</small>
+                <h3>Landing Page Projects</h3>
+                <p>
+                    Focused landing page concepts created for affiliate
+                    promotion and digital campaigns.
+                </p>
+                <span class="private-tag">Private Project</span>
+            </div>
+
+            <div class="card project reveal">
+                <small>04 / Entertainment</small>
+                <h3>Entertainment Platforms</h3>
+                <p>
+                    Experience around movie and TV-related digital projects
+                    and online promotion.
+                </p>
+                <span class="private-tag">Private Project</span>
+            </div>
+
+            <div class="card project reveal">
+                <small>05 / Sports</small>
+                <h3>Sports Digital Projects</h3>
+                <p>
+                    Experience involving sports-related online markets,
+                    promotion and affiliate activities.
+                </p>
+                <span class="private-tag">Private Project</span>
+            </div>
+
+            <div class="card project reveal">
+                <small>06 / Research</small>
+                <h3>Market & Competitor Research</h3>
+                <p>
+                    Research-driven projects focused on discovering
+                    opportunities, competitors and digital trends.
+                </p>
+                <span class="private-tag">Private Project</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= NETWORKS ================= -->
+
+<section>
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="label">Networks & Platforms</span>
+            <h2>Platforms I have worked with.</h2>
+            <p>
+                A selection of affiliate, advertising and digital platforms
+                I have experience with.
+            </p>
+        </div>
+
+        <div class="network-grid reveal">
+
+            <div class="network">ClickBank</div>
+            <div class="network">JVZoo</div>
+            <div class="network">PrivateMedia</div>
+            <div class="network">TazzTv</div>
+            <div class="network">TrustHubMedia</div>
+            <div class="network">AntSports</div>
+            <div class="network">Adsterra</div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= WHY WORK WITH ME ================= -->
+
+<section>
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="label">Why Work With Me</span>
+            <h2>What I bring to digital projects.</h2>
+        </div>
+
+        <div class="why-grid">
+
+            <div class="card reveal">
+                <div class="why-number">01</div>
+                <h3>Independent Mindset</h3>
+                <p>
+                    I enjoy taking responsibility for my own work,
+                    decisions and problem-solving process.
+                </p>
+            </div>
+
+            <div class="card reveal">
+                <div class="why-number">02</div>
+                <h3>Research Driven</h3>
+                <p>
+                    I believe strong research creates better decisions,
+                    strategies and opportunities.
+                </p>
+            </div>
+
+            <div class="card reveal">
+                <div class="why-number">03</div>
+                <h3>Continuous Learning</h3>
+                <p>
+                    I actively explore new platforms, tools, technologies
+                    and digital strategies.
+                </p>
+            </div>
+
+            <div class="card reveal">
+                <div class="why-number">04</div>
+                <h3>Problem Solver</h3>
+                <p>
+                    I prefer understanding the root of a problem and
+                    working toward a practical solution.
+                </p>
+            </div>
+
+            <div class="card reveal">
+                <div class="why-number">05</div>
+                <h3>Adaptable</h3>
+                <p>
+                    Digital platforms change quickly, so I continuously
+                    adapt and update my knowledge.
+                </p>
+            </div>
+
+            <div class="card reveal">
+                <div class="why-number">06</div>
+                <h3>Experience Focused</h3>
+                <p>
+                    My biggest professional goal is to keep gaining
+                    real-world knowledge and experience.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= WORK STYLE ================= -->
+
+<section>
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="label">Work Style</span>
+            <h2>How I approach my work.</h2>
+        </div>
+
+        <div class="network-grid reveal">
+
+            <span class="network">Independent Worker</span>
+            <span class="network">Research-Driven</span>
+            <span class="network">Problem Solver</span>
+            <span class="network">Experimenter</span>
+            <span class="network">Detail-Oriented</span>
+            <span class="network">Adaptable</span>
+            <span class="network">Consistent</span>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= PHILOSOPHY ================= -->
+
+<section id="philosophy">
+    <div class="container">
+
+        <div class="philosophy reveal">
+
+            <div class="section-heading" style="margin:0 auto 30px;">
+                <span class="label">My Philosophy</span>
+            </div>
+
+            <blockquote>
+                “Learn deeply. Build independently. Grow through experience.”
+            </blockquote>
+
+            <p>
+                I believe money is important, but experience and knowledge
+                have greater long-term value. My goal is to keep learning,
+                gain real-world experience and become someone who can
+                understand and solve a wide range of problems.
+            </p>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= LEARNING ================= -->
+
+<section>
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="label">Learning & Development</span>
+            <h2>Always exploring what comes next.</h2>
+            <p>
+                I am naturally curious about new technologies, platforms,
+                strategies and digital business opportunities.
+            </p>
+        </div>
+
+        <div class="about-grid">
+
+            <div class="card reveal">
+                <h3>Curiosity</h3>
+                <p>
+                    I enjoy exploring unfamiliar tools and platforms to
+                    understand how they work and where they can be useful.
+                </p>
+            </div>
+
+            <div class="card reveal">
+                <h3>Experimentation</h3>
+                <p>
+                    Testing different approaches helps me turn theoretical
+                    knowledge into practical experience.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= BEYOND WORK ================= -->
+
+<section>
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="label">Beyond Work</span>
+            <h2>Things I enjoy outside daily work.</h2>
+        </div>
+
+        <div class="interest-grid reveal">
+
+            <span class="interest">✈ Traveling</span>
+            <span class="interest">💻 Technology</span>
+            <span class="interest">📚 Learning New Things</span>
+            <span class="interest">🔎 Online Research</span>
+            <span class="interest">🌐 Exploring New Platforms</span>
+            <span class="interest">💼 Business & Entrepreneurship</span>
+            <span class="interest">🎬 Movies</span>
+            <span class="interest">🏆 Sports</span>
+            <span class="interest">😴 Rest & Sleep</span>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= EDUCATION ================= -->
+
+<section>
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="label">Education</span>
+            <h2>Academic background.</h2>
+        </div>
+
+        <div class="about-grid">
+
+            <div class="card reveal">
+                <h3>Higher Secondary Certificate</h3>
+                <p>HSC — 2021</p>
+            </div>
+
+            <div class="card reveal">
+                <h3>Secondary School Certificate</h3>
+                <p>SSC — 2018</p>
+            </div>
+
+            <div class="card reveal">
+                <h3>Honours</h3>
+                <p>Currently pursuing</p>
+            </div>
+
+            <div class="card reveal">
+                <h3>Professional Development</h3>
+                <p>
+                    Continuous self-learning through practical digital
+                    projects, research and experimentation.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= SOCIAL ================= -->
+
+<section>
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="label">Connect</span>
+            <h2>Find me online.</h2>
+        </div>
+
+        <div class="social-grid">
+
+            <a class="social reveal"
+               href="https://www.facebook.com/mdsajibislamorg"
+               target="_blank" rel="noopener">
+                <strong>Facebook</strong>
+                <span>Md Sajib Islam</span>
+            </a>
+
+            <a class="social reveal"
+               href="https://www.instagram.com/mdsajibislamorg"
+               target="_blank" rel="noopener">
+                <strong>Instagram</strong>
+                <span>@mdsajibislamorg</span>
+            </a>
+
+            <a class="social reveal"
+               href="https://www.threads.com/@mdsajibislamorg"
+               target="_blank" rel="noopener">
+                <strong>Threads</strong>
+                <span>@mdsajibislamorg</span>
+            </a>
+
+            <a class="social reveal"
+               href="https://www.reddit.com/u/mdsajibislamorg/"
+               target="_blank" rel="noopener">
+                <strong>Reddit</strong>
+                <span>u/mdsajibislamorg</span>
+            </a>
+
+            <a class="social reveal"
+               href="https://x.com/MdSajibIslamOrg"
+               target="_blank" rel="noopener">
+                <strong>X / Twitter</strong>
+                <span>@MdSajibIslamOrg</span>
+            </a>
+
+            <a class="social reveal"
+               href="https://github.com/mdsajibislamorg"
+               target="_blank" rel="noopener">
+                <strong>GitHub</strong>
+                <span>mdsajibislamorg</span>
+            </a>
+
+            <a class="social reveal"
+               href="https://t.me/sajibislam62"
+               target="_blank" rel="noopener">
+                <strong>Telegram</strong>
+                <span>@sajibislam62</span>
+            </a>
+
+            <a class="social reveal"
+               href="https://wa.me/8801327456262"
+               target="_blank" rel="noopener">
+                <strong>WhatsApp</strong>
+                <span>Message me</span>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+    <div class="container">
+
+        <div class="contact-box reveal">
+
+            <h2>Let's Build Something Valuable.</h2>
+
+            <p>
+                Interested in digital marketing, SEO, affiliate marketing
+                or collaboration? Feel free to connect with me through
+                your preferred channel.
+            </p>
+
+            <div class="contact-buttons">
+
+                <a class="btn btn-primary"
+                   href="mailto:mdsajibislamorg@gmail.com">
+                    ✉ Email Me
+                </a>
+
+                <a class="btn btn-secondary"
+                   href="https://wa.me/8801327456262"
+                   target="_blank" rel="noopener">
+                    WhatsApp
+                </a>
+
+                <a class="btn btn-secondary"
+                   href="tel:+8801327456262">
+                    ☎ Call Me
+                </a>
+
+                <a class="btn btn-secondary"
+                   href="https://t.me/sajibislam62"
+                   target="_blank" rel="noopener">
+                    Telegram
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+    <div class="container">
+
+        <div class="footer-inner">
+
+            <div>
+                <span class="footer-brand">Md Sajib Islam</span>
+                <br>
+                Affiliate Marketer & SEO Specialist
+            </div>
+
+            <div>
+                © 2026 Md Sajib Islam — Built with passion for
+                learning, experience & growth.
+            </div>
+
+        </div>
+
+    </div>
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+    // Mobile menu
+    const menuBtn = document.getElementById("menuBtn");
+    const navLinks = document.getElementById("navLinks");
+
+    menuBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+
+    // Close menu after clicking a link
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+        });
+    });
+
+    // Scroll reveal animation
+    const observer = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                observer.unobserve(entry.target);
+            }
+
+        });
+
+    }, {
+        threshold: 0.08
+    });
+
+    document.querySelectorAll(".reveal").forEach(el => {
+        observer.observe(el);
+    });
+
+</script>
+
+</body>
+</html>
